@@ -1,0 +1,18 @@
+/* Exertional: a printed federal form. Black ink, white paper, ruled boxes with a small label in the corner. */
+:root { --ink: #111; --paper: #fff; --faint: #5a5a5a; --fits: #0b6b3a; }
+@media (prefers-color-scheme: dark) { :root { --ink: #f2f2f2; --paper: #0c0c0c; --faint: #a8a8a8; --fits: #58c98b; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 17px/1.55 "Public Sans", "Helvetica Neue", Arial, sans-serif; }
+header, main { max-width: 44rem; margin: 0 auto; padding: 0 1.25rem; }
+header { padding-top: 2.5rem; }
+.form { font-size: .75rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; display: flex; justify-content: space-between; border-bottom: 3px solid var(--ink); padding-bottom: .4rem; }
+h1 { font-size: 2.1rem; line-height: 1.1; font-weight: 800; margin: 1.2rem 0 .6rem; letter-spacing: -.01em; }
+header p { color: var(--faint); margin: 0 0 1.5rem; }
+h2 { background: var(--ink); color: var(--paper); font-size: .8rem; letter-spacing: .1em; text-transform: uppercase; padding: .35rem .6rem; margin: 2rem 0 0; }
+.box { border: 1.5px solid var(--ink); border-top: 0; padding: .8rem .9rem; }
+.box p, .box ul { margin: 0 0 .7rem; } .box > :last-child { margin-bottom: 0; }
+ul { padding-left: 1.1rem; }
+a { color: inherit; text-underline-offset: 3px; }
+.stamp { display: inline-block; border: 2px solid var(--fits); color: var(--fits); font-weight: 800; font-size: .8rem; letter-spacing: .1em; padding: .1rem .5rem; transform: rotate(-2deg); }
+img.icon { width: 76px; height: 76px; border-radius: 17px; border: 1px solid var(--faint); }
+footer { margin: 2.5rem 0 3rem; font-size: .85rem; color: var(--faint); border-top: 1.5px solid var(--ink); padding-top: .7rem; }
